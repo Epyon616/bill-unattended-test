@@ -1,0 +1,16 @@
+.navbar-brand img{
+  width: 30%;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand img {
+    width: 8%;
+  }
+}
