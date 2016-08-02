@@ -15,22 +15,26 @@ describe Bill do
 
   it "gets a generated date" do
     generated_date = subject.generated_date
-    expect(generated_date).to eql test_data["statement"]["generated"]
+    parsed_date = DateTime.parse(test_data["statement"]["generated"]).strftime("%d/%m/%Y")
+    expect(generated_date).to eql parsed_date
   end
 
   it "gets a bill due date" do
     bill_due_date = subject.bill_due_date
-    expect(bill_due_date).to eql test_data["statement"]["due"]
+    parsed_date = DateTime.parse(test_data["statement"]["due"]).strftime("%d/%m/%Y")
+    expect(bill_due_date).to eql parsed_date
   end
 
   it "gets a bill period from date" do
     bill_period_from_date = subject.bill_period_from_date
-    expect(bill_period_from_date).to eql test_data["statement"]["period"]["from"]
+    parsed_date = DateTime.parse(test_data["statement"]["period"]["from"]).strftime("%d/%m/%Y")
+    expect(bill_period_from_date).to eql parsed_date
   end
 
   it "gets a bill period to date" do
     bill_period_to_date = subject.bill_period_to_date
-    expect(bill_period_to_date).to eql test_data["statement"]["period"]["to"]
+    parsed_date = DateTime.parse(test_data["statement"]["period"]["to"]).strftime("%d/%m/%Y")
+    expect(bill_period_to_date).to eql parsed_date
   end
 
   it "gets a bill total amount" do

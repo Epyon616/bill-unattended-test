@@ -1,19 +1,23 @@
 class DataExtractor
   class << self
+    def parse_date(date)
+      DateTime.parse(date).strftime("%d/%m/%Y")
+    end
+    
     def generated_date(data)
-      data["statement"]["generated"]
+      parse_date(data["statement"]["generated"])
     end
 
     def bill_due_date(data)
-      data["statement"]["due"]
+      parse_date(data["statement"]["due"])
     end
 
     def bill_period_from_date(data)
-      data["statement"]["period"]["from"]
+      parse_date(data["statement"]["period"]["from"])
     end
 
     def bill_period_to_date(data)
-      data["statement"]["period"]["to"]
+      parse_date(data["statement"]["period"]["to"])
     end
 
     def bill_total_amount(data)
