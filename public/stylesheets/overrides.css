@@ -1,0 +1,48 @@
+h2 {
+  color: #311b92;
+}
+h4 {
+  padding: 2% 0;
+}
+nav {
+  background: white;
+  color: black;
+}
+nav a {
+  color: black;
+}
+.brand-logo img {
+  margin-top: 2%;
+  width: 80%;
+}
+h4.sub-heading .small {
+  font-size: 0.7em;
+  line-height: 250%;
+}
+.price {
+  font-size: 36px;
+  vertical-align: top;
+}
+.sub-heading {
+  margin: 5% 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+.date {
+  padding: 1% 0;
+  line-height: 140%;
+  font-size: 12px;
+}
+.page-footer .container {
+  color: black;
+}
+.last {
+  margin-bottom: 20%;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+}
