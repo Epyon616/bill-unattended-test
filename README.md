@@ -11,6 +11,7 @@ The completed application has been deployed to Heroku [https://bill-unattended-t
 Full specification of this technical test can be found [here](https://github.com/ldabiralai/bill-unattended-test).
 
 To run this application locally:
+
 1.  Clone the repository
 2.  Move into the directory named "bill-unattended-test"
 3.  Run `bundle install`
