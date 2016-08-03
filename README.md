@@ -12,7 +12,7 @@ Full specification of this technical test can be found [here](https://github.com
 
 To run this application locally:
 1.  Clone the repository
-2.  Move into the directory named "bill-test"
+2.  Move into the directory named "bill-unattended-test"
 3.  Run `bundle install`
 4.  Run `bundle exec rackup`
 5.  Go to http://localhost:9292 in your browser
