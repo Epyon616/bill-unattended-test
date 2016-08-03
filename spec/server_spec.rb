@@ -2,8 +2,6 @@ require_relative '../server.rb'
 require 'rspec'
 require 'rack/test'
 
-set :environment, :test
-
 describe 'Server' do
   include Rack::Test::Methods
 
