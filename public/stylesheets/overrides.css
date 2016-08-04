@@ -45,4 +45,14 @@ h4.sub-heading .small {
   h4 {
     font-size: 17px;
   }
+  .card .card-title {
+    font-size: 18px;
+    line-height: 100%;
+    vertical-align: top;
+  }
+  .price {
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 250%;
+  }
 }
